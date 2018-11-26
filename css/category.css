@@ -1,0 +1,82 @@
+.pyg_view {
+  padding-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.pyg_view ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pyg_view .left {
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pyg_view .left ul {
+  width: 100%;
+}
+
+.pyg_view .left ul li {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.pyg_view .left ul li.active {
+  border-left: 3px solid #0094ff;
+  background: #fff;
+}
+
+.pyg_view .right {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pyg_view .right .good_items {
+  background-color: #fff;
+}
+
+.pyg_view .right .good_items .good_title {
+  height: 40px;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #0094ff;
+}
+
+.pyg_view .right .good_items .good_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pyg_view .right .good_items .good_list ul li {
+  width: 33.33%;
+}
+
+.pyg_view .right .good_items .good_list ul li a img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pyg_view .right .good_items .good_list ul li a div {
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=category.css.map */

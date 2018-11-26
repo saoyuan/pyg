@@ -1,0 +1,75 @@
+.pyg_header {
+  padding: 0 3px;
+  background: #0094ff;
+}
+
+.pyg_header h1 {
+  color: #fff;
+}
+
+.pyg_header a {
+  color: #fff;
+}
+
+.pyg_view {
+  position: relative;
+}
+
+.pyg_view .good_item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pyg_view .good_item ul li {
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+.pyg_view .good_item ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view .good_item ul li a .good_l {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px 0;
+}
+
+.pyg_view .good_item ul li a .good_l img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pyg_view .good_item ul li a .good_r {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pyg_view .good_item ul li a .good_r .good_name {
+  text-overflow: ellipsis;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #555;
+}
+
+.pyg_view .good_item ul li a .good_r .good_price {
+  color: red;
+}
+/*# sourceMappingURL=search.css.map */

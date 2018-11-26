@@ -1,0 +1,21 @@
+.pyg_view {
+  padding: 10px;
+}
+
+.pyg_view .mui-input-group .mui-input-row:nth-of-type(2) {
+  position: relative;
+}
+
+.pyg_view .mui-input-group .mui-input-row:nth-of-type(2) button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 6px;
+  width: 90px;
+}
+
+.pyg_view .login_btn_tool a {
+  width: 49%;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=reg.css.map */

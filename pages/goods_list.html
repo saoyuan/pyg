@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>列表页面-24-1.2K</title>
+     <!-- 需要引入的css -->
+     <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.css">
+     <link rel="stylesheet" href="../lib/mui/css/mui.css">
+     <!-- 项目的公共的样式文件 scss  -->
+     <link rel="stylesheet" href="../css/common.css">
+     <!-- 自己页面的样式文件 scss -->
+     <link rel="stylesheet" href="../css/goods_list.css">
+
+</head>
+
+<body>
+     <!-- 头部 -->
+     <header class="  pyg_header mui-bar mui-bar-nav  ">
+          <h1 class="mui-title">商品列表</h1>
+          <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+          <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+     </header>
+     <!-- 内容 -->
+     <div class="pyg_view">
+          <!-- mui的组件的html布局类似 iscroll -->
+          <div>
+               <ul class="goods_list">
+
+               </ul>
+          </div>
+     </div>
+     <!-- 尾部 -->
+     <footer class="pyg_footer">
+          <a href="javascript:;">
+               <span class="fa fa-home"></span>
+               <div>首页</div>
+          </a>
+          <a href="pages/category.html">
+               <span class="fa fa-list-ul"></span>
+               <div>分类</div>
+          </a>
+          <a href="javascript:;">
+               <span class="fa fa-cart-plus"></span>
+               <div>购物车</div>
+          </a>
+          <a href="javascript:;">
+               <span class="fa fa-user"></span>
+               <div>我的</div>
+          </a>
+     </footer>
+</body>
+
+<!-- 模板引擎 -->
+<script type="text/html" id="mainTpl">
+     {{each arr value index }}
+     <li>
+     <a href="javascript:;">
+          <div class="item_left">
+               <img src="{{value.goods_small_logo}}"
+                    alt="">
+          </div>
+          <div class="item_right">
+               <!-- mui-ellipsis -->
+               <div class="goods_name ">
+                    {{value.goods_name}}
+               </div>
+               <div class="goods_price">
+                    ￥{{value.goods_price}}
+               </div>
+          </div>
+     </a>
+          </li>
+     {{/each}}
+</script>
+<!-- 模板引擎 -->
+
+<!-- js -->
+<script src="../lib/mui/js/mui.js"></script>
+<!-- zepto 是我 自己定制过的！！！ 里面包含了一些常用的模块！！ 直接当做jq来使用！！！  -->
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<!-- iscroll -->
+<script src="../lib/iscroll/iscroll.js"></script>
+<!-- 公共 js -->
+<script src="../js/common.js"></script>
+<!-- 自己 js -->
+<script src="../js/goods_list.js"></script>
+
+</html>

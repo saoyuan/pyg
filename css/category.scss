@@ -1,0 +1,73 @@
+.pyg_view{
+    padding-left: 80px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .left{
+        width: 80px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        height: 100%;
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 16px;
+                &.active{
+                    border-left: 3px solid #0094ff;
+                    background: #fff;
+                }
+            }
+           
+        }
+        
+    }
+    .right{
+        height: 100%;
+        overflow: hidden;
+        .good_items{
+            background-color: #fff;
+           
+            .good_title{
+                height: 40px;
+                padding-left: 10px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #0094ff;
+            }
+            .good_list{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 33.33%;
+                        
+                        a{
+                            img{
+                                display: block;
+                                width: 80%;
+                                margin: 0 auto;
+                                
+                            }
+                            div{
+                                color: #000;
+                                text-align: center;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.pyg_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_nav > a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 3px;
+  padding: 12px;
+}
+
+.pyg_nav > a img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.goods_list {
+  padding: 2px 5px;
+}
+
+.goods_list .good_items > img {
+  display: block;
+  width: 100%;
+}
+
+.goods_list .good_items > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.goods_list .good_items > ul li {
+  width: 49%;
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+.goods_list .good_items > ul li .goods_detail > img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.goods_list .good_items > ul li .goods_detail .good_name {
+  font-size: 12px;
+  color: #000;
+  overflow: hidden;
+  height: 45px;
+}
+
+.goods_list .good_items > ul li .goods_detail .good_price {
+  color: red;
+  font-size: 20px;
+}
+
+.goods_list .good_items > ul li .goods_like {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+/*# sourceMappingURL=index.css.map */

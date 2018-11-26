@@ -1,0 +1,58 @@
+
+
+// 头部
+.pyg_header{
+    padding: 0 3px;
+    background: #0094ff;
+    h1{
+        color: #fff;
+    }
+    a{
+        color: #fff;
+    }
+}
+// 主体
+.pyg_view{
+    position: relative;
+    .good_item{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                background: #fff;
+                margin-bottom: 5px;
+                a{
+                    display: flex;
+                    .good_l{
+                        flex: 1;
+                        padding: 5px 0;
+                        img{
+                            display: block;
+                            width: 60%;
+                            margin: 0 auto;
+                        }
+                    }
+                    .good_r{
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                       .good_name{
+                            text-overflow: ellipsis;
+                            font-size: 12px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            color: #555;
+                       }
+                       .good_price{
+                           color: red;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+
